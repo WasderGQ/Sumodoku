@@ -4,6 +4,7 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using WasderGQ.Sudoku.Generic;
 
@@ -11,34 +12,79 @@ namespace WasderGQ.Sudoku
 {
     public class PopUpMessage : Singleton<PopUpMessage>
     {
-        [SerializeField] private Button _oKButton;
+        [SerializeField] private Button _okButton;
         [SerializeField] private Button _yesButton;
         [SerializeField] private Button _noButton;
         [SerializeField] private GameObject _assets;
         [SerializeField] private TextMeshProUGUI _messageText;  //TODO: Change this to you used text component
-        private UnityAction _okeyButtonAction;
-        private UnityAction _yesButtonAction;
-        private UnityAction _noButtonAction;
-
+        private Action _okeyButtonAction;
+        private Action _yesButtonAction;
+        private Action _noButtonAction;
         
-        private void OnAssetEnable()
-        {
-            _assets.gameObject.SetActive(true);
-        }
-        private void OnAssetDisable()
-        {
-            _assets.gameObject.SetActive(false);
-        }
 
+        public void SetOkeyPopUpMessage(string message, [CanBeNull] Action clickOk)
+        {
+            PopUpEnable(true);
+            SetOkButtonAction(true);
+            _messageText.text = message;
+            _okeyButtonAction += OKButtonClicked;
+            void OKButtonClicked()
+            {
+                SetOkButtonAction(false);
+                clickOk?.Invoke();
+                Debug.Log("OK Button Clicked");
+                CloseOkeyPopUpMessage();
+            }
+            
+        }
+        
+        public void SetYesNoPopUpMessage(string message, [CanBeNull] Action clickYes,[CanBeNull] Action clickNo)
+        {
+            PopUpEnable(true);
+            _messageText.text = message;
+            SetYesNoButtonAction(true);
+            _yesButtonAction += YesButtonClicked;
+            _noButtonAction += NoButtonClicked;
+            void YesButtonClicked()
+            {
+                SetYesNoButtonAction(false);
+                clickYes?.Invoke();
+                Debug.Log("Yes Button Clicked");
+                CloseYesNoPopUpMessage();
+                
+            }
+            void NoButtonClicked()
+            {
+                SetYesNoButtonAction(false);
+                clickNo?.Invoke();
+                Debug.Log("No Button Clicked");
+                CloseYesNoPopUpMessage();
+            }
+        }
+        
+        private void PopUpEnable(bool state)
+        {
+            if (state)
+            {
+                _assets.gameObject.SetActive(true);
+            }
+            else
+            {
+                _assets.gameObject.SetActive(false);
+            }
+        }
         private void SetOkButtonAction(bool state)
         {
             if (!state)
-                _oKButton.onClick.RemoveAllListeners();
-
-            _oKButton.gameObject.SetActive(state);
-
+            {
+                _okButton.onClick.RemoveAllListeners();
+            }
+            _okButton.gameObject.SetActive(state);
             if (state)
-                _oKButton.onClick.AddListener(_okeyButtonAction);
+            {
+                _okButton.onClick.AddListener(InvokeOkeyAction);
+            }
+                
         }
         private void SetYesNoButtonAction(bool state)
         {
@@ -51,79 +97,38 @@ namespace WasderGQ.Sudoku
             _noButton.gameObject.SetActive(state);
             if (state)
             {
-                _yesButton.onClick.AddListener(_okeyButtonAction);
-                _noButton.onClick.AddListener(_okeyButtonAction);
+                _yesButton.onClick.AddListener(InvokeYesAction);
+                _noButton.onClick.AddListener(InvokeNoAction);
             }
                 
         }
-
-
-        public void SetOkeyPopUpMessage(string message, [CanBeNull] UnityAction clickOk)
-        {
-            OnAssetEnable();
-            SetOkButtonAction(true);
-            _messageText.text = message;
-            
-            void OKButtonClicked()
-            {
-                SetOkButtonAction(false);
-                if (clickOk != null)
-                {
-                    clickOk.Invoke();
-                }
-                Debug.Log("OK Button Clicked");
-                CloseOkeyPopUpMessage();
-            }
-            _okeyButtonAction = OKButtonClicked;
-        }
-        
-        public void SetYesNoPopUpMessage(string message, [CanBeNull] UnityAction clickYes,[CanBeNull] UnityAction clickNo)
-        {
-            OnAssetEnable();
-            _messageText.text = message;
-            SetYesNoButtonAction(true);
-            void YesButtonClicked()
-            {
-                SetYesNoButtonAction(false);
-                if (clickYes != null)
-                {
-                    clickYes.Invoke();
-                }
-                Debug.Log("Yes Button Clicked");
-                CloseYesNoPopUpMessage();
-                
-            }
-            void NoButtonClicked()
-            {
-                SetYesNoButtonAction(false);
-                if (clickNo != null)
-                {
-                    clickNo.Invoke();
-                }
-                Debug.Log("No Button Clicked");
-                CloseYesNoPopUpMessage();
-            }
-            _yesButtonAction = YesButtonClicked;
-        }
-        
-        
         private void CloseYesNoPopUpMessage()
         {
             _yesButtonAction = null;
             _noButtonAction = null;
             _noButton.gameObject.SetActive(false);
             _yesButton.gameObject.SetActive(false);
-            OnAssetDisable();
+            PopUpEnable(false);
             
         }
         private void CloseOkeyPopUpMessage()
         {
             _okeyButtonAction = null;
-            _oKButton.gameObject.SetActive(false);
-            OnAssetDisable();
+            _okButton.gameObject.SetActive(false);
+            PopUpEnable(false);
         }
-        
-        
-        
+
+        private void InvokeOkeyAction()
+        {
+            _okeyButtonAction?.Invoke();
+        }
+        private void InvokeYesAction()
+        {
+            _yesButtonAction?.Invoke();
+        }
+        private void InvokeNoAction()
+        {
+            _noButtonAction?.Invoke();
+        }
     }
 }

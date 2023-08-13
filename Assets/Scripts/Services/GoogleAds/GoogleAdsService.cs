@@ -11,10 +11,12 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
     {
         private Action<InitializationStatus> _initStatus;
         public bool GoogleAdsServiceBool { get; private set; }
-        public void Init()
+        public async Task<bool> Init()
         {
-            SetStatusFunc();
-            InitializeGoogleAds();
+            
+             bool resultTask= await InitializeGoogleAds();
+             SetStatusFunc();
+            return resultTask;
         }
     
         private void SetStatusFunc()

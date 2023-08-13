@@ -1,6 +1,6 @@
 {
     "name": "DOTween.Modules",
-    "rootNamespace": "WasderGQ",
+    "rootNamespace": "WasderGQ.ThirdPartyUtility",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using WasderGQ.Sudoku.Enums;
 using WasderGQ.Sudoku.Generic;
-using WasderGQ.Sudoku.Scenes.LogoScene;
 
 namespace WasderGQ.Sudoku.SceneManagement
 {

@@ -4,8 +4,8 @@
     "references": [
         "Unity.TextMeshPro.Editor",
         "Unity.TextMeshPro",
-        "DOTween.Modules",
-        "Utility"
+        "Utility",
+        "DOTween.Modules"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

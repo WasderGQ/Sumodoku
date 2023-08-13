@@ -1,21 +1,41 @@
 using System.Collections.Generic;
 using UnityEngine;
-using WasderGQ.Sudoku.Scenes.GameScene.Game;
+using WasderGQ.Sudoku.Scenes.GameScene.GameElement;
+using WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards;
 using WasderGQ.Sudoku.Scenes.GameScene.InputModuls;
 
-namespace WasderGQ.Sudoku.Controllers
+namespace WasderGQ.Sudoku.InputsControllers
 {
     public class PlayerInputController : MonoBehaviour
     {
-        [SerializeField] private LayerMask _interactable;
-        [SerializeField] private Keyboard _keyboard;
-        [SerializeField]private Zone _preFabZone;
-        [SerializeField]private KeyboardKey _preFabKey;
+        //[SerializeField]private LayerMask _gameLayer;
+        //[SerializeField]private LayerMask _interactable;
+        [SerializeField]private Keyboard _keyboard;
+        [SerializeField]private Board _board;
         private void Update()
         {
             MouseClick();
         }
 
+        private void ChangeHintBoolOnZones()
+        {
+            foreach (var parsel in _board.Parsels)
+            {
+                foreach (var zone in parsel.ZonesInParsel)
+                {
+                    if (zone.IsHint)
+                    {
+                        zone.ChangeHintSetting(false);
+                    }
+                    else
+                    {
+                        zone.ChangeHintSetting(true);
+                    }
+                }
+            }
+        }
+        
+        
         private void MouseClick()
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -30,7 +50,9 @@ namespace WasderGQ.Sudoku.Controllers
         private void RayThrowTakeRaycastHit(out bool iscatch,out RaycastHit raycastHit,Vector3 postion)
         {
             Ray ray = new Ray(postion, Vector3.forward);
-            List<RaycastHit> raycastHitList = new List<RaycastHit>(Physics.RaycastAll(ray, float.MaxValue, _interactable));
+            List<RaycastHit> raycastHitList = new List<RaycastHit>(Physics.RaycastAll(ray, float.MaxValue));
+            //raycasting not working on UI elements .Changed this line cod .Early it was : Physics.RaycastAll(ray, float.MaxValue, _interactable);.
+            // and raycaster select object on that layer (old version).
             if (raycastHitList.Count == 0)
             {
                 iscatch = false;
@@ -53,17 +75,21 @@ namespace WasderGQ.Sudoku.Controllers
                  
                 try
                 {
-                    Zone zone = raycastHit.collider.GetComponent<Zone>();
-                    if (zone.Selected)
+                    Zone zone = raycastHit.collider.GetComponentInParent<Zone>();
+                    if (!zone._unSelectable)
                     {
-                        zone.DoUnSelected(zone.MyValue);
-                        _keyboard.RemoveZoneToList(zone);
+                        if (zone.Selected)
+                        {
+                            zone.DoUnSelected(zone.MyValue);
+                            _keyboard.RemoveZoneToList(zone);
+                        }
+                        else
+                        {
+                            zone.DoSelected();
+                            _keyboard.SaveZoneToList(zone);
+                        } 
                     }
-                    else
-                    {
-                        zone.DoSelected();
-                        _keyboard.SaveZoneToList(zone);
-                    }
+                    
                 }
                 catch 
                 {
@@ -74,7 +100,7 @@ namespace WasderGQ.Sudoku.Controllers
                 
             }
 
-            if (raycastHit.collider.CompareTag("KeyboardKey"))
+            else if (raycastHit.collider.CompareTag("KeyboardKey"))
             {
                 try
                 {
@@ -87,6 +113,15 @@ namespace WasderGQ.Sudoku.Controllers
                     Debug.LogError("There is no !! KeyboardKey !! script on the reached GameObject.");
                 }
             }
+            else if(raycastHit.collider.CompareTag("HintButton"))
+            {
+                ChangeHintBoolOnZones();
+            }
+            else
+            {
+                Debug.LogWarning("No Tag on GameObejct");
+            }
+            
 
         }
     }

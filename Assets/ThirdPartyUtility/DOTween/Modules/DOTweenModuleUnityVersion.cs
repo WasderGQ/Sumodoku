@@ -1,17 +1,16 @@
 ﻿// Author: Daniele Giardini - http://www.demigiant.com
 // Created: 2018/07/13
 
-using DG.Tweening;
+using System;
+using UnityEngine;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using UnityEngine;
-
 //#if UNITY_2018_1_OR_NEWER && (NET_4_6 || NET_STANDARD_2_0)
 //using Task = System.Threading.Tasks.Task;
 //#endif
 
 #pragma warning disable 1591
-namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
+namespace DG.Tweening
 {
     /// <summary>
     /// Shortcuts/functions that are not strictly related to specific Modules
@@ -19,9 +18,6 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
     /// </summary>
 	public static class DOTweenModuleUnityVersion
     {
-#if UNITY_4_3 || UNITY_4_4 || UNITY_4_5 || UNITY_4_6 || UNITY_5 || UNITY_2017_1_OR_NEWER
-        #region Unity 4.3 or Newer
-
         #region Material
 
         /// <summary>Tweens a Material's color using the given gradient
@@ -30,7 +26,7 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
         /// <param name="gradient">The gradient to use</param><param name="duration">The duration of the tween</param>
         public static Sequence DOGradientColor(this Material target, Gradient gradient, float duration)
         {
-            Sequence s = DG.Tweening.DOTween.Sequence();
+            Sequence s = DOTween.Sequence();
             GradientColorKey[] colors = gradient.colorKeys;
             int len = colors.Length;
             for (int i = 0; i < len; ++i) {
@@ -55,7 +51,7 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
         /// <param name="duration">The duration of the tween</param>
         public static Sequence DOGradientColor(this Material target, Gradient gradient, string property, float duration)
         {
-            Sequence s = DG.Tweening.DOTween.Sequence();
+            Sequence s = DOTween.Sequence();
             GradientColorKey[] colors = gradient.colorKeys;
             int len = colors.Length;
             for (int i = 0; i < len; ++i) {
@@ -74,12 +70,6 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
         }
 
         #endregion
-
-        #endregion
-#endif
-
-#if UNITY_5_3_OR_NEWER || UNITY_2017_1_OR_NEWER
-        #region Unity 5.3 or Newer
 
         #region CustomYieldInstructions
 
@@ -173,9 +163,6 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
 
         #endregion
 
-        #endregion
-#endif
-
 #if UNITY_2018_1_OR_NEWER
         #region Unity 2018.1 or Newer
 
@@ -192,7 +179,7 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
                 if (Debugger.logPriority > 0) Debugger.LogMissingMaterialProperty(propertyID);
                 return null;
             }
-            TweenerCore<Vector2, Vector2, VectorOptions> t = DG.Tweening.DOTween.To(() => target.GetTextureOffset(propertyID), x => target.SetTextureOffset(propertyID, x), endValue, duration);
+            TweenerCore<Vector2, Vector2, VectorOptions> t = DOTween.To(() => target.GetTextureOffset(propertyID), x => target.SetTextureOffset(propertyID, x), endValue, duration);
             t.SetTarget(target);
             return t;
         }
@@ -208,7 +195,7 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
                 if (Debugger.logPriority > 0) Debugger.LogMissingMaterialProperty(propertyID);
                 return null;
             }
-            TweenerCore<Vector2, Vector2, VectorOptions> t = DG.Tweening.DOTween.To(() => target.GetTextureScale(propertyID), x => target.SetTextureScale(propertyID, x), endValue, duration);
+            TweenerCore<Vector2, Vector2, VectorOptions> t = DOTween.To(() => target.GetTextureScale(propertyID), x => target.SetTextureScale(propertyID, x), endValue, duration);
             t.SetTarget(target);
             return t;
         }
@@ -321,7 +308,6 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
     // ███ CLASSES █████████████████████████████████████████████████████████████████████████████████████████████████████████
     // █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 
-#if UNITY_5_3_OR_NEWER || UNITY_2017_1_OR_NEWER
     public static class DOTweenCYInstruction
     {
         public class WaitForCompletion : CustomYieldInstruction
@@ -400,5 +386,4 @@ namespace WasderGQ.ThirdPartyUtility.DOTween.Modules
             }
         }
     }
-#endif
 }

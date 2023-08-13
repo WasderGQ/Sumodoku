@@ -6,7 +6,7 @@ using WasderGQ.Sudoku.Generic;
 
 namespace WasderGQ.Sudoku
 {
-    public class LoadingScene : Singleton<LoadingScene>
+    public class OnAwakePrepareApplication : Singleton<OnAwakePrepareApplication>
     {
         [SerializeField] private AppSettings _appSettings;
         private void Awake()
