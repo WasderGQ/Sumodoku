@@ -104,12 +104,12 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
             {
                 if (TrueValue == value )
                 {
-                    Debug.Log("True triggered");
+                    //Debug.Log("True triggered");
                     DoTrueAnimation();
                 }
                 else
                 {
-                    Debug.Log("False triggered");
+                    //Debug.Log("False triggered");
                     DoFalseAnimation();
                 }
             }

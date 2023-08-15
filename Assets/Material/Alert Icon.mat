@@ -38,6 +38,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Alert Icon
   m_Shader: {fileID: -6465566751694194690, guid: 1322eb39b9ca6934690aeac6ff1bbde2, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
@@ -52,6 +54,7 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - DepthOnly
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:

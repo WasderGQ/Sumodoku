@@ -47,7 +47,7 @@ namespace WasderGQ.Sudoku.AIs
         //step 1
         private void FillParsels() 
         {
-                Debug.Log("Filling Parsels Started");
+            
                 FillParsel(_processedParsels[0],false);
                 FillParsel(_processedParsels[8],false);
                 FillParsel(_processedParsels[2],true);

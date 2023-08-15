@@ -13,6 +13,19 @@ public class ConsolInformation : Singleton<ConsolInformation>
     [SerializeField]private float _frames = 0;
     [SerializeField]private float _timePassed = 0.0f;
     [SerializeField]private float _oldFrame = 0.0f;
+    [SerializeField]private bool _isConsolOpen;
+    [SerializeField]public event Action StartFadeAnimation;
+    private void OnEnable()
+    {
+        _isConsolOpen = true;
+    }
+
+    private void OnDisable()
+    {
+        _isConsolOpen = false;
+        StartFadeAnimation.Invoke();
+    }
+
     private string FpsCounter()
     {
         float currentFps = 1 / Time.deltaTime;
@@ -94,7 +107,10 @@ public class ConsolInformation : Singleton<ConsolInformation>
     
     private void Update()
     {
-        _infoText.text = $"Current FPS = {FpsCounter()} \n Average FPS = {AverageFpsCounter()} \n Current HZ = {CurrentHz()} \n Current Resolution = {CurrentResolution()} \n Current Screen Size =   {CurrentScreenSize()}  \n  Current Screen DPI =  {CurrentScreenDPI()}  \n Current Screen Orientation =  {CurrentScreenOrientation()}  \n  Current Screen FullScrean =  {CurrentScreenFullScrean()}  \n  Current Screen Brightness =  {CurrentScreenBrightness()}  \n  Current Screen SleepTimeout =  {CurrentScreenSleepTimeout()}  \n  Current Screen AutorotateToPortrait =  {CurrentScreenAutorotateToPortrait()}  \n  Current Screen AutorotateToPortraitUpsideDown =  {CurrentScreenAutorotateToPortraitUpsideDown()}  \n  Current Screen AutorotateToLandscapeLeft =  {CurrentScreenAutorotateToLandscapeLeft()}  \n  Current Screen AutorotateToLandscapeRight =  {CurrentScreenAutorotateToLandscapeRight()}  \n  Current Screen SafeArea =  {CurrentScreenSafeArea()}  \n  Current Screen Cutouts =  {CurrentScreenCutouts()}  \n  Current Screen Resolution =  {CurrentScreenResolution()}  \n ";
+        if (_isConsolOpen)
+        {
+            _infoText.text = $"Current FPS = {FpsCounter()} \n Average FPS = {AverageFpsCounter()} \n Current HZ = {CurrentHz()} \n Current Resolution = {CurrentResolution()} \n Current Screen Size =   {CurrentScreenSize()}  \n  Current Screen DPI =  {CurrentScreenDPI()}  \n Current Screen Orientation =  {CurrentScreenOrientation()}  \n  Current Screen FullScrean =  {CurrentScreenFullScrean()}  \n  Current Screen Brightness =  {CurrentScreenBrightness()}  \n  Current Screen SleepTimeout =  {CurrentScreenSleepTimeout()}  \n  Current Screen AutorotateToPortrait =  {CurrentScreenAutorotateToPortrait()}  \n  Current Screen AutorotateToPortraitUpsideDown =  {CurrentScreenAutorotateToPortraitUpsideDown()}  \n  Current Screen AutorotateToLandscapeLeft =  {CurrentScreenAutorotateToLandscapeLeft()}  \n  Current Screen AutorotateToLandscapeRight =  {CurrentScreenAutorotateToLandscapeRight()}  \n  Current Screen SafeArea =  {CurrentScreenSafeArea()}  \n  Current Screen Cutouts =  {CurrentScreenCutouts()}  \n  Current Screen Resolution =  {CurrentScreenResolution()}  \n ";
+        }
     }
 }
     

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231505228882",
+    "project_id": "sumodoku-3ecca",
+    "storage_bucket": "sumodoku-3ecca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231505228882:android:8cf59601333e82f5bc1b8b",
+        "android_client_info": {
+          "package_name": "com.WasderGQ.Sumodoku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231505228882-2gno41qf9etcioj0ecj34kigmrmd7pt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIEJgQgbGtrJTLEB5KTfOO6S9GeOtpnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231505228882-2gno41qf9etcioj0ecj34kigmrmd7pt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

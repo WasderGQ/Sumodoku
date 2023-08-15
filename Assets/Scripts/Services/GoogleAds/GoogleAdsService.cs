@@ -13,54 +13,23 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         public bool GoogleAdsServiceBool { get; private set; }
         public async Task<bool> Init()
         {
-            
-             bool resultTask= await InitializeGoogleAds();
-             SetStatusFunc();
-            return resultTask;
+            TaskCompletionSource<bool> taskCompletionSource = new TaskCompletionSource<bool>();
+           await InitializeGoogleAds(taskCompletionSource);
+           await taskCompletionSource.Task;
+           return taskCompletionSource.Task.Result;
         }
     
-        private void SetStatusFunc()
-        {
-            _initStatus = StatusChooser;
-        }
 
-        private async Task<bool> InitializeGoogleAds()
-        { 
-            TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
-            MobileAds.Initialize((_initStatus) =>
+        private async Task InitializeGoogleAds(TaskCompletionSource<bool> taskCompletionSource)
+        {
+            MobileAds.Initialize(initStatus =>
             {
-                tcs.SetResult(true);
-            }); 
-           
-            bool result = await tcs.Task;
-            return result;
-        }
-
-        private void StatusChooser(InitializationStatus status)
-        {
-            Dictionary<string, AdapterStatus> adapterStatesDic = status.getAdapterStatusMap();
-            if (adapterStatesDic.Count > 0)
-            {
-                Success();
-            }
-            else
-            {
-                Failed();
-            }
-        }
-    
-        private void Failed()
-        {
-            GoogleAdsServiceBool = false;
-            Debug.LogError("GoogleAds Unsuccessfully Init");
-
-        }
-
-        private void Success()
-        {
-            GoogleAdsServiceBool = true;
-            Debug.Log($"GoogleAds Successfully Init");
+                Debug.Log("Google Ads Initialized");
+                taskCompletionSource.SetResult(true);
+            });
             
         }
+
+        
     }
 }

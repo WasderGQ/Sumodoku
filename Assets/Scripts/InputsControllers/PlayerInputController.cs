@@ -12,6 +12,12 @@ namespace WasderGQ.Sudoku.InputsControllers
         //[SerializeField]private LayerMask _interactable;
         [SerializeField]private Keyboard _keyboard;
         [SerializeField]private Board _board;
+        public static bool IsInputControllerActive { get; set; }
+        private void Start()
+        {
+            IsInputControllerActive = true;
+        }
+        
         private void Update()
         {
             MouseClick();
@@ -38,7 +44,7 @@ namespace WasderGQ.Sudoku.InputsControllers
         
         private void MouseClick()
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && IsInputControllerActive)
             {
                 Vector3 position = TakeMousePosition();
                 RayThrowTakeRaycastHit(out bool isCatch,out RaycastHit raycastHit,position);
@@ -119,10 +125,11 @@ namespace WasderGQ.Sudoku.InputsControllers
             }
             else
             {
-                Debug.LogWarning("No Tag on GameObejct");
+                Debug.LogWarning("No Tag on GameObject");
             }
             
 
         }
+        
     }
 }

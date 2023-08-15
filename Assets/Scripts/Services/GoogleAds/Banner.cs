@@ -26,22 +26,19 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         public void Init()
         {
             GetAdaptiveSize();
-            ShowBanner();
-            //ListenToAdEvents();
+            LoadBanner();
+            ListenToAdEvents();
         }
 
         private void GetAdaptiveSize()
         {
             adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
         }
-        private void ShowBanner()
+        private void LoadBanner()
         {
-            if (GoogleAdsService.Instance.GoogleAdsServiceBool)
-            {
                 LoadAd();
-            }
         }
-        private void CreateBannerView()
+        private bool CreateBannerView()
         {
             Debug.Log("Creating banner view");
 
@@ -50,22 +47,31 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
             {
                 DestroyAd();
             }
-
             // Create a 320x50 banner at top of the screen
             _bannerView = new BannerView(_adUnitId, adaptiveSize, AdPosition.Bottom);
+            if (_bannerView == null)
+            {
+                Debug.LogError("BannerView is null");
+                return false;
+            }
+                return true;
         }
         public void LoadAd()
         {
+            bool status = false;
             // create an instance of a banner view first.
             if(_bannerView == null)
             {
-                CreateBannerView();
+                status= CreateBannerView();
+              
             }
-            // create our request used to load the ad.
+            if (!status)
+            {
+                Debug.Log("Failed to create BannerView.");
+                return;
+            }
             AdRequest adRequest = new AdRequest.Builder().Build();
-            //adRequest.Keywords.Add("unity-admob-sample");
-
-            // send the request to load the ad.
+            adRequest.Keywords.Add("unity-admob-sample");
             Debug.Log("Loading banner ad.");
             _bannerView.LoadAd(adRequest);
         }

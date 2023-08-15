@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using WasderGQ.Sudoku.InputsControllers;
 using WasderGQ.Sudoku.Scenes.GameScene.GameElement;
 using WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards;
 
@@ -13,7 +14,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.InputModuls
         [SerializeField] private List<Zone> _selectedZones;
         [SerializeField] private Boardx9 _boardx9;
         [SerializeField] private Sudoku _sudoku;
-
+        
 
         public void init()
         {
@@ -43,14 +44,33 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.InputModuls
             }
             else if(key.MyValue == 10)
             {
-                _boardx9.ClearAllZone();
+                PopUpMessage popUpMessage = PopUpController.CreatePopUpMessage();
+                if(popUpMessage != null)
+                {
+                    PlayerInputController.IsInputControllerActive = false;
+                    popUpMessage.SetYesNoPopUpMessage("Are u sure u want to clear all zones?", Yes,No);
+                    void No()
+                    {
+                        PlayerInputController.IsInputControllerActive = true;
+                    }
+
+                    void Yes()
+                    {
+                        _selectedZones.Clear();
+                        _boardx9.ClearAllZone();
+                        PlayerInputController.IsInputControllerActive = true;
+                    }
+                }
+                else
+                {
+                    Debug.Log("No Zone Selected");
+                }
             }
             else
             {
                 Debug.Log("No Zone Selected");
             }
         }
-        
         
     }
 }

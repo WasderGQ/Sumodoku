@@ -1,6 +1,5 @@
 using UnityEngine;
 using WasderGQ.Sudoku.Enums;
-using UnityEditor.VersionControl;
 
 namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
 {

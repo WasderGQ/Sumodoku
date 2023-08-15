@@ -20,6 +20,7 @@ using System.Xml;
 
 using UnityEditor;
 using UnityEditor.Callbacks;
+using UnityEditor.iOS.Xcode;
 using UnityEngine;
 
 using GoogleMobileAds.Editor;
@@ -218,6 +219,5 @@ public static class PListProcessor
 #endif
     }
 }
-
 
 #endif

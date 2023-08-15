@@ -15,8 +15,6 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
   - Game
   - Selectable
   - UnSelecable
@@ -41,7 +39,27 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1433737705
+    locked: 0
+  - name: Animations
+    uniqueID: 85222463
+    locked: 0
+  - name: Buttons
+    uniqueID: 3565166925
+    locked: 0
+  - name: Texts
+    uniqueID: 2861438401
+    locked: 0
+  - name: PopUp
+    uniqueID: 612562741
+    locked: 0
+  - name: Consol
+    uniqueID: 3764115211
     locked: 0

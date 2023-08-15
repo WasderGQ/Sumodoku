@@ -16,24 +16,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.InputModuls
         { 
             get => _myValue;
         }
-
-        /*public void Init()
-        {
-            SetButton();
-        }
-
-        private void SetButton()
-        {
-            try
-            {
-                Button = GetComponent<Button>();
-            }
-            catch (Exception e)
-            {
-                Debug.LogError($"This keyboard button doesnt have button component!!! {e.Message}");
-
-            }
-        }*/
+        
         public async void DoClickAnimation()
         {
             _background.DOColor(Color.red, 0.5f);
