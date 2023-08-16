@@ -533,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Consol
       objectReference: {fileID: 0}
+    - target: {fileID: 403325391654838722, guid: fb1a97f081ab8d74e8a5cec924766ad2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 403325391654838732, guid: fb1a97f081ab8d74e8a5cec924766ad2, type: 3}
       propertyPath: m_ScreenMatchMode
       value: 0

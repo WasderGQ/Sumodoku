@@ -1,0 +1,32 @@
+Microsoft Windows [Version 10.0.22621.2134]
+(c) Microsoft Corporation. All rights reserved.
+
+F:\Unity_Projects\Sumodoku\.KEYSTORE>cmd.exe /c keytool -list -v -keystore "F:\Unity_Projects\Sumodoku\.KEYSTORE\WasderGQ.keystore"
+Keystore type: JKS
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: wasdergq
+Creation date: 29 Tem 2023
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: C=90, ST=Canakkale, L=Merkez, O=WasderGQ, OU=Dev, CN=Fatih Can ESKIN
+Issuer: C=90, ST=Canakkale, L=Merkez, O=WasderGQ, OU=Dev, CN=Fatih Can ESKIN
+Serial number: 5d8b0e95
+Valid from: Sat Jul 29 17:55:47 TRT 2023 until: Sun Jul 16 17:55:47 TRT 2073
+Certificate fingerprints:
+	 SHA1: FB:15:9C:DD:42:57:37:C5:DF:E3:F1:F9:90:84:D0:4B:E0:EF:97:1F
+	 SHA256: EB:08:DA:D6:C0:83:8A:16:85:17:3C:2D:61:AB:0C:C0:70:C2:FF:68:57:BE:DA:01:5B:40:B5:EF:D4:E0:28:BC
+Signature algorithm name: SHA1withRSA (weak)
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+
+*******************************************
+*******************************************
+
+
+
+F:\Unity_Projects\Sumodoku\.KEYSTORE>

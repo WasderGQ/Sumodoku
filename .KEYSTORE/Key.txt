@@ -1,1 +1,52 @@
 FcE-19921998-FcE
+
+
+
+ Debug.Log("Keystore file found. Starting the KeyTool process...");
+
+                    string command = $"cmd.exe /c keytool -list -v -keystore \"{keystorePath}\"";
+
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe");
+
+                    processStartInfo.UseShellExecute = false;
+                    processStartInfo.RedirectStandardInput = true;
+                    processStartInfo.RedirectStandardOutput = true;
+                    processStartInfo.RedirectStandardError = true;
+                    processStartInfo.CreateNoWindow = true;
+
+                    Process process = new Process();
+                    process.StartInfo = processStartInfo;
+                    process.Start();
+
+                    using (StreamWriter sw = process.StandardInput)
+                    {
+                        if (sw.BaseStream.CanWrite)
+                        {
+                            sw.WriteLine(command);
+                        }
+                    }
+
+
+                    string output = process.StandardOutput.ReadToEnd();
+                    string errorOutput = process.StandardError.ReadToEnd();
+                    //process.WaitForExit();
+                    //process.Close();
+
+                    if (!string.IsNullOrEmpty(errorOutput))
+                    {
+                        return $"Keytool Error Output: {errorOutput} Please check the password and try again.";
+                    }
+                    else
+                    {
+                        Debug.Log("KeyTool operation complete. Saving the information in a txt file...");
+
+                        string fileName = "Certification Finger Print.txt";
+                        string filePath = Path.Combine(_keyStoreFileLocation, fileName);
+                        File.WriteAllText(filePath, output);
+                        Debug.Log("Certification Finger Print was saved in the Certification Finger Print.txt file.");
+                    }
+                }
+                else
+                {
+                    return "KeyStore Password is empty!";
+                }
