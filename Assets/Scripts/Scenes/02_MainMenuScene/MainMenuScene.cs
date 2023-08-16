@@ -26,16 +26,16 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
             SetVariable();
             InitVariable();
         }
-
+        void SetVariable()
+        {
+            _banner = new Banner();
+        }
         void InitVariable()
         {
             _banner.Init();
             _mainAnimationController.Init();
         }
-        void SetVariable()
-        {
-            _banner = new Banner();
-        }
+        
         void EventListener()
         {
            

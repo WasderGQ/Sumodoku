@@ -15,7 +15,7 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
     #if UNITY_EDITOR
         private string _adUnitId = "ca-app-pub-3940256099942544/6300978111";
     #elif UNITY_ANDROID
-        private string _adUnitId = "ca-app-pub-3940256099942544/6300978111";  // real used : ca-app-pub-3306653392214615/8650743807
+        private string _adUnitId = "ca-app-pub-3306653392214615/8650743807";  // real used : ca-app-pub-3306653392214615/8650743807
     #elif UNITY_IPHONE
         private string _adUnitId = "ca-app-pub-3940256099942544/2934735716"; // not active
     #else
