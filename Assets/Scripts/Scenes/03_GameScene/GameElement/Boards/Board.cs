@@ -76,6 +76,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
                     break;
                 }
                 zone.WriteValue(zone.TrueValue);
+                zone.ChangeTextColor(new Color(255f/255f,0f/255f,53f/255f,255f/255f));
                 zone.SetInterecable(false);
                 //zone.SetLayer(UnInteractable); In UI not working
                 zone._unSelectable = true;

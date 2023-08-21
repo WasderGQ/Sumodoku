@@ -63,7 +63,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.InputModuls
                 }
                 else
                 {
-                    Debug.Log("No Zone Selected");
+                    Debug.Log("PopUp Message is null");
                 }
             }
             else

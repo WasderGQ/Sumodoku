@@ -251,6 +251,12 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
             }
         }
 
+        public void ChangeTextColor(Color givenColor)
+        {
+            _text.color = givenColor;
+
+        }
+
 
     }
 }

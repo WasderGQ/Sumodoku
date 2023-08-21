@@ -12,8 +12,10 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
         
         [SerializeField] private SO_GameMode _gameTypes;
         [SerializeField] private Button _startGame;
+        [SerializeField] private Button _settings;
         [SerializeField] private Banner _banner;
         [SerializeField] private Button _exit;
+        [SerializeField] private GameObject _settingsPanel;
         [SerializeField] private MainAnimationController _mainAnimationController;
         private void Start()
         {
@@ -40,6 +42,7 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
         {
            
             _startGame.onClick.AddListener(StartGameMode9x9);
+            _settings.onClick.AddListener(OpenSettingsPanel);
             _exit.onClick.AddListener(ExitGame);
         }
 
@@ -68,6 +71,11 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
         {
             _gameTypes.SetGamemode12x12();
             SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);
+        }
+
+        private void OpenSettingsPanel()
+        {
+            _settingsPanel.SetActive(true);
         }
         private void ExitGame()
         {

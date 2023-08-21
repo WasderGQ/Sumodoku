@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace WasderGQ.Sudoku
 {
-    public  class PopUpController
+    public class PopUpController
     {
         [CanBeNull]public static PopUpMessage CreatePopUpMessage()
         {
@@ -25,7 +25,10 @@ namespace WasderGQ.Sudoku
         {
             try
             {
-               return Resources.Load<PopUpMessage>("Prefabs/General/PopUpMessage/PopUpMessageCanvas");
+               PopUpMessage temp = Resources.Load<PopUpMessage>("Prefabs/PopUpMessage/PopUpMessageCanvas");
+               if(temp == null)
+                   throw new Exception("PopUpMessage Prefab not found");
+               return temp;
             }
             catch (Exception e)
             {

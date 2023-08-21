@@ -5,16 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd2f4adb-5eda-40a8-ac4f-90398db23f66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.KEYSTORE/Key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.KEYSTORE/Key.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/PopUpMessage/PopUpMessageCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/PopUpMessage/PopUpMessageCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00_LogoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00_LogoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Alert.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Alert.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Number.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Animation/MainMenu/Number.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/DevTool.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/DevTool/Consol.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/DevTool/Consol.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/LogoScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/LogoScene/AnimationalLogo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/LogoScene/AnimationalLogo/WaitingOverlay.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/LogoScene/AnimationalLogo/WaitingOverlay.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/PopUpMessage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/PopUpMessage/PopUpMessageCanvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/General/PopUpMessage/PopUpMessageCanvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/01_ParselRow-RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/01_ParselRow-RectTransform/ParselRow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/01_ParselRow-RectTransform/ParselRow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/02_Parsel-RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/02_Parsel-RectTransform/Parsel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/02_Parsel-RectTransform/Parsel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/03_Zone-RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/03_Zone-RectTransform/Zone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/01_Game-RectTransform/03_Zone-RectTransform/Zone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Key.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Key/Key.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Key/Key.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Keyboard.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Keyboard/Keyboard.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/RectTransform/02_Controller-RectTransform/Keyboard/Keyboard.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/00_All-WorldTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/00_All-WorldTransform/Sudoku.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/00_All-WorldTransform/Sudoku.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/01_Game-WorldTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/01_Game-WorldTransform/Parsel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/01_Game-WorldTransform/Parsel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/01_Game-WorldTransform/Zone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/01_Game-WorldTransform/Zone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/02_Controller-WorldTransform.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/02_Controller-WorldTransform/Key.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/InGame/WorldTransform/02_Controller-WorldTransform/Key.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/02_MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02_MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Generic/PopUpMessage/PopUpController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Generic/PopUpMessage/PopUpController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/BackGroundAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/BackGroundAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/FrontObjectAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/FrontObjectAnimationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/Banner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/Banner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Zone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Zone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/InputModuls/Keyboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/InputModuls/Keyboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdPartyUtility/Icons - ThirdPartyPack/png/button_line/button_corner_square2_line/button_corner_square2_line_40.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdPartyUtility/Icons - ThirdPartyPack/png/button_line/button_corner_square2_line/button_corner_square2_line_40.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
@@ -25,6 +84,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,7 +107,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "WasderGQ/FirebaseInit",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,6 +171,7 @@
       <workItem from="1692035209502" duration="4721000" />
       <workItem from="1692102236170" duration="604000" />
       <workItem from="1692212501172" duration="621000" />
+      <workItem from="1692611320466" duration="7971000" />
     </task>
     <servers />
   </component>

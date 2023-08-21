@@ -44,7 +44,7 @@ namespace WasderGQ.Sudoku
         {
             while (!StopAnimation)
             {
-                _mainText.transform.DOShakePosition(1f, 10f, 10, 90f, false, true).SetEase(Ease.InOutBounce);
+                _mainText.transform.DOShakePosition(1f, 1f, 1, 15f, false, true).SetEase(Ease.InOutBounce);
                 yield return new WaitForSeconds(1.0f);
             }
             yield return null;

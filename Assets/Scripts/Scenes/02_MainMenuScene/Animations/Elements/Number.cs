@@ -39,8 +39,9 @@ namespace WasderGQ.Sudoku
         }
         private void CalculateStartAndEndPosition(Vector2 screenSize)
         {
-            numbersStartPoint = new Vector2(0, 100);
-            numbersEndPoint = new Vector2(screenSize.x - numbersStartPoint.x, (screenSize.y + numbersStartPoint.y) * -1);
+            numbersStartPoint = new Vector2(0, 1f);
+            numbersEndPoint = new Vector2((screenSize.x - numbersStartPoint.x) * 0.01f, (screenSize.y + numbersStartPoint.y) * -0.01f);
+            Debug.Log(numbersEndPoint);
         }
         
         private void SetRandomNumber()
@@ -50,17 +51,20 @@ namespace WasderGQ.Sudoku
 
         private void SetRandomFontSize()
         {
-            _numberText.fontSize = WasderGQRandom._random.Next(60, 100);
+            double range = 1.2d - 0.5d ;
+            double sample = WasderGQRandom._random.NextDouble();
+            double scaled = (sample * range) + 0.5d;
+            _numberText.fontSize = (float) scaled;
         }
 
         private float CalculateFadeValue()
         {
-            return (_numberText.fontSize - 60) / 60f;
+            return (_numberText.fontSize - 0.5f) / 0.5f;
         }
 
         private Vector2 SelectRandomPosition()
         {
-            return new Vector2(UnityEngine.Random.Range(numbersStartPoint.x, numbersEndPoint.x),numbersStartPoint.y);
+            return new Vector2(UnityEngine.Random.Range(numbersStartPoint.x, numbersEndPoint.x) ,numbersStartPoint.y);
         }
 
         
@@ -100,7 +104,7 @@ namespace WasderGQ.Sudoku
             float speed = 0;
             while (!StopAnimation)
             {
-                transform.DOLocalMoveY(numbersEndPoint.y,_moveTime).SetEase(Ease.InSine);
+                transform.DOLocalMoveY(numbersEndPoint.y,_moveTime);
                 yield return new WaitForSeconds(_moveTime);
                 SetStartPosition(SelectRandomPosition());
                 SetRandomNumber();
