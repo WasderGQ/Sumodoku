@@ -2,11 +2,12 @@ using System;
 using UnityEngine;
 using GoogleMobileAds;
 using GoogleMobileAds.Api;
+using WasderGQ.Utility.Singleton;
 
 
 namespace WasderGQ.Sudoku.Services.GoogleAds
 {
-    public class Banner 
+    public class BannerController : Singleton<BannerController>
     {
         private BannerView _bannerView;
         private AdSize adaptiveSize;
@@ -23,11 +24,12 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
     #endif
         // android Test : _adUnitId = "ca-app-pub-3940256099942544/6300978111"
         
-        public void Init()
+        public void  Init()
         {
             GetAdaptiveSize();
             LoadBanner();
             ListenToAdEvents();
+            
         }
 
         private void GetAdaptiveSize()
@@ -41,14 +43,13 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         private bool CreateBannerView()
         {
             Debug.Log("Creating banner view");
-
-            // If we already have a banner, destroy the old one.
             if (_bannerView != null)
             {
                 DestroyAd();
             }
             // Create a 320x50 banner at top of the screen
             _bannerView = new BannerView(_adUnitId, adaptiveSize, AdPosition.Bottom);
+            
             if (_bannerView == null)
             {
                 Debug.LogError("BannerView is null");

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using WasderGQ.Utility.Consol;
+using WasderGQ.Utility.Singleton;
 
-public class Consol : MonoBehaviour
+public class Consol : Singleton<Consol>
 {
     [SerializeField] private bool _isConsolOpen;
     [SerializeField] private bool _isFaiding;

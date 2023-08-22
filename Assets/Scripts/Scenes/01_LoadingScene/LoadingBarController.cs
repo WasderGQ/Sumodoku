@@ -13,7 +13,7 @@ using WasderGQ.Sudoku.Services.GoogleAds;
 
 namespace WasderGQ.Sudoku
 {
-    public class LoadScene : MonoBehaviour
+    public class LoadingBarController : MonoBehaviour
     {
         [SerializeField] private LoadingBar _loadingBar;
         [SerializeField] private CancellationTokenSource _cancellationToken;
@@ -30,7 +30,11 @@ namespace WasderGQ.Sudoku
                  taskBool = await AppSettings.Instance.InIt();
                  if(taskBool)
                      _cancellationTokenSource.Cancel();
-                 
+                 else
+                 {
+                     _cancellationTokenSource.Cancel();
+                     ErrorMessage();
+                 }
                 await Task.Delay(200);
                 await WriteTextInfo(" ");
                 if (taskBool)
@@ -41,12 +45,17 @@ namespace WasderGQ.Sudoku
                     taskBool = await GoogleAdsService.Instance.Init();
                     if(taskBool)
                         _cancellationTokenSource.Cancel();
+                    else
+                    {
+                        _cancellationTokenSource.Cancel();
+                        ErrorMessage();
+                    }
                     await Task.Delay(200);
                     await WriteTextInfo(" ");
                     if(taskBool)
                     {
                         await WriteTextInfo("Loading Complete");
-                        await Task.Delay(500);
+                        await Task.Delay(200);
                         SceneLoader.Instance.LoadScene(EnumScenes.MainMenuScene);
                     }
                 }
@@ -63,6 +72,12 @@ namespace WasderGQ.Sudoku
         private async Task WriteTextInfo(string text)
         {
             _loadingInfoText.text = text;
+        }
+
+        private void ErrorMessage()
+        {
+            PopUpMessage msg =PopUpController.CreatePopUpMessage();
+            msg.SetOkeyPopUpMessage("Same Thing Went Wrong. Please Try Again Later",() => Application.Quit());
         }
     }
 }

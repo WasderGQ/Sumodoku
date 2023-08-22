@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using WasderGQ.Sudoku.AIs;
+using WasderGQ.Sudoku.Scenes.MainMenuScene;
 using WasderGQ.Utility.List_Array_Etc;
 using Random = UnityEngine.Random;
 
@@ -13,11 +14,13 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
         protected Zone[,] _zones;
         [SerializeField] protected Parsel[] _parsels;
         [SerializeField] protected List<Zone> _sealedZones;
+         protected SO_GameMode _gameMode;
+         protected virtual int _amountOfSealedZones { get; set; }
         //[SerializeField] protected LayerMask UnInteractable;
         public Parsel[] Parsels { get => _parsels; }
         public Zone[,] Zones { get => _zones; }
         
-        public virtual void InIt() //this function structure varies in inherited clusters
+        public virtual void InIt(SO_GameMode gameMode) //this function structure varies in inherited clusters
         {
             
         }
@@ -64,15 +67,16 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
             }
         }
 
-        protected virtual void SelectZoneFromBoard(int startValue ,int amount)
+        protected virtual void SelectZoneFromBoard(int amount)
         {
+            int startValue = 0;
             int counter = startValue;
             while (counter < amount)
             {
                 Zone zone = TakeRandomZone();
                 if (IsThereSameValue(zone))
                 {
-                    SelectZoneFromBoard(counter, amount);
+                    SelectZoneFromBoard( amount);
                     break;
                 }
                 zone.WriteValue(zone.TrueValue);
@@ -85,14 +89,14 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
             }
         }
 
-        private Zone TakeRandomZone()
+        protected Zone TakeRandomZone()
         {
             int xValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(0) - 1)));
             int yValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(1) - 1)));
             return _zones[xValueIndex, yValueIndex];
         }
         
-        private bool IsThereSameValue(Zone selectedZone)
+        protected bool IsThereSameValue(Zone selectedZone)
         {
             foreach (var zone in _sealedZones)
             {
@@ -113,9 +117,13 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
                     if(zone.IsInteractable)
                         zone.SetMyValueDefault();
                 }
-            }   
-            
+            }
         }
+
         
+        protected  virtual int CalculateAmountOfSealedZones(SO_GameMode gameMode)
+        {
+            return 14;
+        }
     }
 }

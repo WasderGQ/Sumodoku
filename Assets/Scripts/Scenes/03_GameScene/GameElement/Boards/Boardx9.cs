@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using WasderGQ.Sudoku.Enums;
+using WasderGQ.Sudoku.Scenes.MainMenuScene;
 
 namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
 {
@@ -7,14 +9,16 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
     {
         [SerializeField] public readonly GameBoards GameBoards = GameBoards.x9;
 
-        public override void InIt()
+        public override void InIt(SO_GameMode gameMode)
         {
+             
             ConvertParselZonesToZones();//
             base.ParselsInIt(); //parsels in it
             base.SetZonesID();  //set zones id
             base.StartMapCreater(); //start map creater
             base.MakeZonesDefault(); //start with null value zone
-            base.SelectZoneFromBoard(0, 20); // show selected zone's value
+            int amountOfSealedZones = CalculateAmountOfSealedZones(gameMode); //calculate amount of sealed zones
+            SelectZoneFromBoard(amountOfSealedZones); // show selected zone's value
         }
 
 
@@ -82,7 +86,43 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
             }
         }
 
-
+        protected override void SelectZoneFromBoard(int amount)
+        {
+            int counter = 0;
+            while (counter < amount)
+            {
+                Zone zone;
+                do
+                {
+                    zone = TakeRandomZone();
+                } while (IsThereSameValue(zone));
+                zone.WriteValue(zone.TrueValue);
+                zone.ChangeTextColor(new Color(255f/255f,0f/255f,53f/255f,255f/255f));
+                zone.SetInterecable(false);
+                //zone.SetLayer(UnInteractable); In UI not working
+                zone._unSelectable = true;
+                _sealedZones.Add(zone);
+                counter++;
+            }
+        }
+        protected override int CalculateAmountOfSealedZones(SO_GameMode gameMode)
+        {
+            switch (gameMode.GameDifficulty)
+            {
+                case GameDifficulty.Easy:
+                    return 30;
+                case GameDifficulty.Medium:
+                    return 26;
+                case GameDifficulty.Hard:
+                    return 22;
+                case GameDifficulty.VeryHard:
+                    return 18;
+                case GameDifficulty.Extreme:
+                    return 14;
+                 default:
+                     return 20;
+            }
+        }
 
     }
 }

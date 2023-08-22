@@ -6,10 +6,10 @@ namespace WasderGQ.Sudoku
 {
     public enum GameDifficulty 
     {
-        Easy = 35,
-        Medium = 30,
-        Hard = 25,
-        VeryHard = 20,
-        Extreme =15,
+        Easy = 5,
+        Medium = 4,
+        Hard = 3,
+        VeryHard = 2,
+        Extreme = 1,
     }
 }

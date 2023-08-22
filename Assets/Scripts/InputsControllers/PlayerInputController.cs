@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using WasderGQ.Sudoku.Enums;
+using WasderGQ.Sudoku.SceneManagement;
 using WasderGQ.Sudoku.Scenes.GameScene.GameElement;
 using WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards;
 using WasderGQ.Sudoku.Scenes.GameScene.InputModuls;
@@ -122,6 +124,16 @@ namespace WasderGQ.Sudoku.InputsControllers
             else if(raycastHit.collider.CompareTag("HintButton"))
             {
                 ChangeHintBoolOnZones();
+            }
+            else if (raycastHit.collider.CompareTag("GoBackToMenu"))
+            {
+                PopUpMessage popUpMessage = PopUpController.CreatePopUpMessage();
+                IsInputControllerActive = false;
+                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to go back to the main menu?", () => { SceneLoader.Instance.LoadScene(EnumScenes.MainMenuScene);},()=> IsInputControllerActive = true);
+            }
+            else if(raycastHit.collider.CompareTag("RefreshBoard"))
+            {
+                SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);
             }
             else
             {

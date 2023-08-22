@@ -66,7 +66,7 @@ namespace WasderGQ.Sudoku
                 else 
                 {
                     _numberList.Add(tempNumber);
-                    tempNumber.Init(_colorList,new Vector2(Screen.currentResolution.height,Screen.currentResolution.width));  
+                    tempNumber.Init(_colorList,_canvasRectTransform.sizeDelta);  
                 }
                 float waitTime = RandomWaitTime();
                 yield return new WaitForSeconds(waitTime);

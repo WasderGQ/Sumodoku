@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameMode
   m_EditorClassIdentifier: 
   <GameBoards>k__BackingField: 2
+  <GameDifficulty>k__BackingField: 5

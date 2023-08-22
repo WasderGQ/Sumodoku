@@ -20,6 +20,10 @@ namespace WasderGQ.Sudoku.SceneManagement
         {
             StartCoroutine(LoadSceneRoutine(enumSceneToLoad));
         }
+        public void RefreshScene()
+        {
+            StartCoroutine(ReLoadSameScene(SceneManager.GetActiveScene().buildIndex));
+        }
 
         private IEnumerator LoadSceneRoutine(Enums.EnumScenes enumSceneName)
         {
@@ -27,8 +31,6 @@ namespace WasderGQ.Sudoku.SceneManagement
             if (SceneManager.sceneCount > 1)
             {
                 SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects); //unload active scene
-
-            
             }
             _nextSceneLoadOperation = SceneManager.LoadSceneAsync((int)enumSceneName, LoadSceneMode.Additive);
             while (!_nextSceneLoadOperation.isDone)
@@ -37,6 +39,12 @@ namespace WasderGQ.Sudoku.SceneManagement
             }
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex((int)enumSceneName));
             Resources.UnloadUnusedAssets();
+            yield break;
+        }
+        private IEnumerator ReLoadSameScene(int SceneIndex)
+        {
+            
+            SceneManager.UnloadSceneAsync(SceneIndex, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects); //unload active scene
             yield break;
         }
     

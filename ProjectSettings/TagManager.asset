@@ -8,6 +8,10 @@ TagManager:
   - KeyboardKey
   - Zone
   - HintButton
+  - GoBackToMenu
+  - RefreshBoard
+  - GoogleAdsService
+  - LoadedObjectCollector
   layers:
   - Default
   - TransparentFX

@@ -23,25 +23,6 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
             InIt();
         }
         
-
-        private void ChangeHintBoolOnZones()
-        {
-            foreach (var parsel in _boardList[_currentlySelectedBoard].Parsels)
-            {
-                foreach (var zone in parsel.ZonesInParsel)
-                {
-                    if (zone.IsHint)
-                    {
-                        zone.ChangeHintSetting(false);
-                    }
-                    else
-                    {
-                        zone.ChangeHintSetting(true);
-                    }
-                }
-            }
-        }
-        
         private void InIt()
         {
             GameBoardOpener();
@@ -51,7 +32,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
         
         private void BoardInIt()
         {
-            _boardList[(int)_gameMode.GameBoards].InIt();
+            _boardList[(int)_gameMode.GameBoards].InIt(_gameMode);
         }
         
         private void KeyboardInIt()

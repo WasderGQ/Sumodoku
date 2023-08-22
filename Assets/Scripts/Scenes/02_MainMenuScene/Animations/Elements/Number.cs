@@ -12,7 +12,7 @@ namespace WasderGQ.Sudoku
     {
         private Vector2 numbersStartPoint;
         private Vector2 numbersEndPoint;
-        [SerializeField] private List<Color> _colorList = new List<Color>();
+        [SerializeField] private List<Color> _colorList ;
         [SerializeField] private bool StopAnimation;
         [SerializeField] private int _colorListCounter;
         [SerializeField] private TextMeshProUGUI _numberText;
@@ -35,13 +35,12 @@ namespace WasderGQ.Sudoku
             _fadeValue = CalculateFadeValue();
             StartCoroutine(StartTextColorAnimationForNumber());
             StartCoroutine(MoveToEnd());
-            _moveTime = 15;
+            _moveTime = 20;
         }
         private void CalculateStartAndEndPosition(Vector2 screenSize)
         {
             numbersStartPoint = new Vector2(0, 1f);
-            numbersEndPoint = new Vector2((screenSize.x - numbersStartPoint.x) * 0.01f, (screenSize.y + numbersStartPoint.y) * -0.01f);
-            Debug.Log(numbersEndPoint);
+            numbersEndPoint = new Vector2((screenSize.x - numbersStartPoint.x)  , (screenSize.y + numbersStartPoint.y) * -1f);
         }
         
         private void SetRandomNumber()
