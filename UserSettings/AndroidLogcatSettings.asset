@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R3CN506467T",
         "name": "com.WasderGQ.Sumodoku",
-        "processId": 10712,
+        "processId": 9713,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,12 @@
             "deviceId": "R3CN506467T",
             "name": "com.WasderGQ.Sumodoku",
             "processId": 10712,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN506467T",
+            "name": "com.WasderGQ.Sumodoku",
+            "processId": 9713,
             "exited": false
         }
     ],

@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
-using JetBrains.Annotations;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using WasderGQ.Sudoku.BetweenScene;
@@ -11,15 +10,20 @@ using WasderGQ.Sudoku.Enums;
 using WasderGQ.Sudoku.SceneManagement;
 using WasderGQ.Sudoku.Services.GoogleAds;
 
-namespace WasderGQ.Sudoku
+namespace WasderGQ.Sudoku.Scenes._01_LoadingScene
 {
     public class LoadingBarController : MonoBehaviour
     {
         [SerializeField] private LoadingBar _loadingBar;
         [SerializeField] private CancellationTokenSource _cancellationToken;
         [SerializeField] private TextMeshProUGUI _loadingInfoText;
+        [SerializeField] private bool _showLoadingInfoText;
+        [SerializeField] private Transform _notStuckIcon;
+        [SerializeField] private bool _stopAnimation;
+        [SerializeField] private GameObject _sceneObjects;
         private async void Start()
         {
+            StartLoadingNotStuckAnimation();
             bool taskBool = false;
             CancellationTokenSource _animationCancellationTokenSource = new CancellationTokenSource();
             _cancellationToken = new CancellationTokenSource();
@@ -56,7 +60,9 @@ namespace WasderGQ.Sudoku
                     {
                         await WriteTextInfo("Loading Complete");
                         await Task.Delay(200);
-                        SceneLoader.Instance.LoadScene(EnumScenes.MainMenuScene);
+                        _stopAnimation = true;
+                        DestroyLoadSceneObject();
+                        SceneLoader.Instance.WLoadScene(EnumScenes.MainMenuScene);
                     }
                 }
             }
@@ -69,11 +75,36 @@ namespace WasderGQ.Sudoku
             
         }
 
+        private void DestroyLoadSceneObject()
+        {
+            Destroy(_sceneObjects);
+            gameObject.SetActive(false);
+        }
+        private void OnDestroy()
+        {
+            _loadingBar._stopAnimation = true;
+            _cancellationToken.Cancel();
+        }
         private async Task WriteTextInfo(string text)
         {
+            if(_showLoadingInfoText)
             _loadingInfoText.text = text;
         }
 
+        private void StartLoadingNotStuckAnimation()
+        {
+            if(!_showLoadingInfoText)
+            StartCoroutine(LoadingNotStuckAnimation());
+        }
+
+        private IEnumerator LoadingNotStuckAnimation()
+        {
+            while (!_stopAnimation)
+            {
+                _notStuckIcon.DORotate(new Vector3(0,0,-360),01f,RotateMode.FastBeyond360).SetEase(Ease.Linear);
+                yield return new WaitForSeconds(1f);
+            }
+        }
         private void ErrorMessage()
         {
             PopUpMessage msg =PopUpController.CreatePopUpMessage();

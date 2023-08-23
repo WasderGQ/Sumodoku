@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using GoogleMobileAds;
 using GoogleMobileAds.Api;
+using UnityEngine.SceneManagement;
 using WasderGQ.Utility.Singleton;
 
 
@@ -11,7 +13,7 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
     {
         private BannerView _bannerView;
         private AdSize adaptiveSize;
-       
+        private GameObject _adaptiveBanner;
         
     #if UNITY_EDITOR
         private string _adUnitId = "ca-app-pub-3940256099942544/6300978111";
@@ -38,53 +40,37 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         }
         private void LoadBanner()
         {
-                LoadAd();
+                StartCoroutine(LoadAd());
         }
-        private bool CreateBannerView()
+        
+        private IEnumerator LoadAd()
         {
-            Debug.Log("Creating banner view");
-            if (_bannerView != null)
+            while(SceneManager.sceneCount > 1)
             {
-                DestroyAd();
+                yield return null;
             }
-            // Create a 320x50 banner at top of the screen
-            _bannerView = new BannerView(_adUnitId, adaptiveSize, AdPosition.Bottom);
-            
-            if (_bannerView == null)
-            {
-                Debug.LogError("BannerView is null");
-                return false;
-            }
-                return true;
-        }
-        public void LoadAd()
-        {
-            bool status = false;
-            // create an instance of a banner view first.
-            if(_bannerView == null)
-            {
-                status= CreateBannerView();
-              
-            }
-            if (!status)
-            {
-                Debug.Log("Failed to create BannerView.");
-                return;
-            }
+            CreateBannerView();
             AdRequest adRequest = new AdRequest.Builder().Build();
             adRequest.Keywords.Add("unity-admob-sample");
             Debug.Log("Loading banner ad.");
             _bannerView.LoadAd(adRequest);
         }
-        
+        private void CreateBannerView()
+        {
+            //Create a Adaptive Banner
+            _bannerView = new BannerView(_adUnitId, adaptiveSize, AdPosition.Bottom);
+        }
         private void DestroyAd()
         {
-            if (_bannerView != null)
-            {
                 Debug.Log("Destroying banner ad.");
                 _bannerView.Destroy();
-                _bannerView = null;
-            }
+        }
+        private void DestroyOnSceneSwitch()
+        {
+            SceneManager.activeSceneChanged += (current, next) =>
+            {
+                DestroyAd();
+            };
         }
         private void ListenToAdEvents()
         {

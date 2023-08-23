@@ -1,4 +1,5 @@
 using DG.Tweening;
+using GoogleMobileAds.Api;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -24,9 +25,9 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
         
         void InIt()
         {
-            GoogleAdsService.Instance.SetShowAds(true, AdsType.Banner);
             EventListener();
             InItVariable();
+            BannerController.Instance.Init();
         }
        
         void InItVariable()
@@ -50,7 +51,7 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
 
         private void StartGame()
         {
-            SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);
+            SceneLoader.Instance.WLoadScene(EnumScenes.GameSceneSudoku);
         }
 
         private void OpenSettingsPanel()

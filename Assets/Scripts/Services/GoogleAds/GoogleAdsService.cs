@@ -39,7 +39,6 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
             Debug.Log("Google Ads Initialized Done !!!");
             MainThreadDispatcher.RunOnMainThread(() =>
             {
-                BannerController.Instance.Init();
                 MoveInitializedGoogleAdsServices();
             });
             
@@ -48,16 +47,13 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         private void MoveInitializedGoogleAdsServices()
         {
             _googleAdsService = GameObject.Find("New Game Object");
-            _adaptiveBanner = GameObject.FindGameObjectWithTag("ADAPTIVE_Banner");
-            if (_googleAdsService != null && _adaptiveBanner != null)
+            
+            if (_googleAdsService != null)
             {
 
                 _googleAdsService.transform.SetParent(transform);
-                _adaptiveBanner.transform.SetParent(transform);
                 _googleAdsService.name = "GoogleAdsService";
                 _googleAdsService.tag = "GoogleAdsService";
-                _adaptiveBanner.name = "ADAPTIVE_Banner";
-                SetShowAds(false, AdsType.Banner);
             }
             else
             {

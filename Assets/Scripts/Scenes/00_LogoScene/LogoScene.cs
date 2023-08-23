@@ -39,7 +39,7 @@ namespace WasderGQ.Sudoku.Scenes.LogoScene
             }
             _LogoScene.SetActive(false);
             TaskCompleteSourceAnimation.SetResult(true);
-            SceneLoader.Instance.LoadScene(EnumScenes.LoadingScene);
+            SceneLoader.Instance.LoadFirstScene(EnumScenes.LoadingScene);
             yield return null;
         }
     }

@@ -129,13 +129,13 @@ namespace WasderGQ.Sudoku.InputsControllers
             {
                 PopUpMessage popUpMessage = PopUpController.CreatePopUpMessage();
                 IsInputControllerActive = false;
-                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to go back to the main menu?", () => { SceneLoader.Instance.LoadScene(EnumScenes.MainMenuScene);},()=> IsInputControllerActive = true);
+                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to go back to the main menu?", () => { SceneLoader.Instance.WLoadScene(EnumScenes.MainMenuScene);},()=> IsInputControllerActive = true);
             }
             else if(raycastHit.collider.CompareTag("RefreshBoard"))
             {
                 PopUpMessage popUpMessage = PopUpController.CreatePopUpMessage();
                 IsInputControllerActive = false;
-                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to recreate the board ?", () => { SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);},()=> IsInputControllerActive = true);
+                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to recreate the board ?", () => { SceneLoader.Instance.WLoadScene(EnumScenes.GameSceneSudoku);},()=> IsInputControllerActive = true);
             }
             else
             {

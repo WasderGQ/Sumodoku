@@ -45,7 +45,7 @@ public class CelebrationScene : MonoBehaviour
     {
         _backGroundAnimationController.StopAnimation = true;
         _stopAnimation = true;
-        SceneLoader.Instance.LoadScene(EnumScenes.MainMenuScene);
+        SceneLoader.Instance.WLoadScene(EnumScenes.MainMenuScene);
     }
     void RemoveButtonListener()
     {

@@ -16,15 +16,19 @@ namespace WasderGQ.Sudoku.SceneManagement
         
         private void ActiveScenesChanged(Scene current, Scene next) => Debug.Log("Active scene has been changed: " + current.name + "-->" + next.name);
         
+        public void LoadFirstScene(EnumScenes enumSceneToLoad)
+        {
+            SceneManager.LoadSceneAsync((int)enumSceneToLoad, LoadSceneMode.Single);
+        }
         public void LoadScene(EnumScenes enumSceneToLoad)
         {
             StartCoroutine(LoadSceneRoutine(enumSceneToLoad));
         }
-        public void RefreshScene()
+        public void WLoadScene(EnumScenes enumSceneToLoad)
         {
-            StartCoroutine(ReLoadSameScene(SceneManager.GetActiveScene().buildIndex));
+            StartCoroutine(WLoadSceneRoutine(enumSceneToLoad));
         }
-
+        
         private IEnumerator LoadSceneRoutine(Enums.EnumScenes enumSceneName)
         {
             //if there are more scene than loading scene, that means there is a scene need to unload.
@@ -41,10 +45,19 @@ namespace WasderGQ.Sudoku.SceneManagement
             Resources.UnloadUnusedAssets();
             yield break;
         }
-        private IEnumerator ReLoadSameScene(int SceneIndex)
+        private IEnumerator WLoadSceneRoutine(Enums.EnumScenes enumSceneName)
         {
-            
-            SceneManager.UnloadSceneAsync(SceneIndex, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects); //unload active scene
+            Scene _tempScene = SceneManager.CreateScene("TempScene");
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);//unload active scene
+            SceneManager.SetActiveScene(_tempScene);
+            _nextSceneLoadOperation = SceneManager.LoadSceneAsync((int)enumSceneName, LoadSceneMode.Additive);
+            while (!_nextSceneLoadOperation.isDone)
+            {
+                yield return null;
+            }
+            SceneManager.UnloadSceneAsync(_tempScene);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex((int)enumSceneName));
+            Resources.UnloadUnusedAssets();
             yield break;
         }
     

@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using WasderGQ.Sudoku.Enums;
 using WasderGQ.Sudoku.SceneManagement;
 using WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards;
 using WasderGQ.Sudoku.Scenes.GameScene.InputModuls;
 using WasderGQ.Sudoku.Scenes.MainMenuScene;
-
+using WasderGQ.Sudoku.Services.GoogleAds;
 
 
 namespace WasderGQ.Sudoku.Scenes.GameScene
@@ -20,6 +19,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
         
         private void Start()
         {
+            BannerController.Instance.Init();
             InIt();
         }
         
@@ -56,7 +56,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
                         return;
                 }
             }
-            SceneLoader.Instance.LoadScene(EnumScenes.Celebration);
+            SceneLoader.Instance.WLoadScene(EnumScenes.Celebration);
         }
     }
 }
