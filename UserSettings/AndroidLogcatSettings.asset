@@ -3,63 +3,57 @@
     "m_SelectedPackage": {
         "deviceId": "R3CN506467T",
         "name": "com.WasderGQ.Sumodoku",
-        "processId": 19622,
+        "processId": 10712,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "R3CN506467T",
+            "name": "com.WasderGQ.Sumodoku",
+            "processId": 30350,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN506467T",
             "name": "com.sec.android.app.launcher",
-            "processId": 2956,
+            "processId": 2933,
             "exited": false
         },
         {
             "deviceId": "R3CN506467T",
             "name": "com.WasderGQ.Sumodoku",
-            "processId": 22931,
+            "processId": 32111,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN506467T",
+            "name": "com.instagram.android",
+            "processId": 31117,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN506467T",
+            "name": "com.WasderGQ.Sumodoku",
+            "processId": 2716,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN506467T",
+            "name": "com.WasderGQ.Sumodoku",
+            "processId": 5404,
             "exited": false
         },
         {
             "deviceId": "R3CN506467T",
             "name": "com.WasderGQ.Sumodoku",
-            "processId": 7523,
+            "processId": 7409,
             "exited": false
         },
         {
             "deviceId": "R3CN506467T",
             "name": "com.WasderGQ.Sumodoku",
-            "processId": 9174,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CN506467T",
-            "name": "com.WasderGQ.Sumodoku",
-            "processId": 12631,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CN506467T",
-            "name": "com.WasderGQ.Sumodoku",
-            "processId": 14828,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CN506467T",
-            "name": "com.WasderGQ.Sumodoku",
-            "processId": 16118,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CN506467T",
-            "name": "com.WasderGQ.Sumodoku",
-            "processId": 17635,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CN506467T",
-            "name": "com.WasderGQ.Sumodoku",
-            "processId": 19622,
+            "processId": 10712,
             "exited": false
         }
     ],

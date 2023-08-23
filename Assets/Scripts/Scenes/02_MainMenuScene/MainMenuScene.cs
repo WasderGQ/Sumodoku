@@ -24,7 +24,7 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
         
         void InIt()
         {
-           // GoogleAdsService.Instance.SetShowAds(true, AdsType.Banner);
+            GoogleAdsService.Instance.SetShowAds(true, AdsType.Banner);
             EventListener();
             InItVariable();
         }

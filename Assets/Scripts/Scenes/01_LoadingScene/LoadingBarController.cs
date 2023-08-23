@@ -21,18 +21,18 @@ namespace WasderGQ.Sudoku
         private async void Start()
         {
             bool taskBool = false;
-            CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource _animationCancellationTokenSource = new CancellationTokenSource();
             _cancellationToken = new CancellationTokenSource();
             if (!_cancellationToken.IsCancellationRequested)
             {
                 await WriteTextInfo("Loading Application Settings");
-                _loadingBar.UpdateLoadStatus(50f,_cancellationTokenSource);
+                _loadingBar.UpdateLoadStatus(50f,_animationCancellationTokenSource);
                  taskBool = await AppSettings.Instance.InIt();
                  if(taskBool)
-                     _cancellationTokenSource.Cancel();
+                     _animationCancellationTokenSource.Cancel();
                  else
                  {
-                     _cancellationTokenSource.Cancel();
+                     _animationCancellationTokenSource.Cancel();
                      ErrorMessage();
                  }
                 await Task.Delay(200);
@@ -40,14 +40,14 @@ namespace WasderGQ.Sudoku
                 if (taskBool)
                 {
                     await WriteTextInfo("Loading Google Ads");
-                    _cancellationTokenSource = new CancellationTokenSource();
-                    _loadingBar.UpdateLoadStatus(100f,_cancellationTokenSource);
+                    _animationCancellationTokenSource = new CancellationTokenSource();
+                    _loadingBar.UpdateLoadStatus(100f,_animationCancellationTokenSource);
                     taskBool = await GoogleAdsService.Instance.Init();
                     if(taskBool)
-                        _cancellationTokenSource.Cancel();
+                        _animationCancellationTokenSource.Cancel();
                     else
                     {
-                        _cancellationTokenSource.Cancel();
+                        _animationCancellationTokenSource.Cancel();
                         ErrorMessage();
                     }
                     await Task.Delay(200);

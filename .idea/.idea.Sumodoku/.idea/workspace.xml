@@ -6,41 +6,45 @@
   <component name="ChangeListManager">
     <list default="true" id="cd2f4adb-5eda-40a8-ac4f-90398db23f66" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Datas/GameMode.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Datas/GameMode.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.2.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.2.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00_LogoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00_LogoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/01_ParselRow/00_ParselRow_Middle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/01_ParselRow/00_ParselRow_Middle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/02_Parsel/Parsel with Line.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/02_Parsel/Parsel with Line.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/02_Parsel/Parsel without Line.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/02_Parsel/Parsel without Line.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/#Base_Zone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/#Base_Zone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/00_Left_Up.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/00_Left_Up.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/01_Center_Up.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/01_Center_Up.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/02_Right_Up.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/02_Right_Up.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/03_Left_Middle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/03_Left_Middle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/04_Center_Middle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/04_Center_Middle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/05_Right_Middle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/05_Right_Middle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/06_Left_Down.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/06_Left_Down.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/07_Center_Down.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/07_Center_Down.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/08_Right_Down.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InGame/RectTransform_NewType/01_Game/03_Zone/08_Right_Down.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02_MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02_MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetweenScene/SceneManagement/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetweenScene/SceneManagement/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/GameDifficulty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/GameDifficulty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/04_CelebrationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/04_CelebrationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BetweenScene/SceneManagement/AppSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BetweenScene/SceneManagement/AppSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Generic/PopUpMessage/PopUpController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Generic/PopUpMessage/PopUpController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputsControllers/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputsControllers/PlayerInputController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadScene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/BackGroundAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/BackGroundAnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/SO_GameMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/SO_GameMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/Banner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/Banner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/GoogleAdsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/GoogleAdsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Consol/Consol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Consol/Consol.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +56,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f05e70674a264f949ba42697e7c9d84c3a00/d7/17255803/AdRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f70bc6c75aac455e8129c619ee6df3b41c800/68/bc32febf/RunOnMainThread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8805ac68dbe45249c85644d617f16e98800/5f/7928d78f/BannerView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Generic/MainThreadDispatcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/SettingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/04_CelebrationScene/CelebrationScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/AdsType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
@@ -143,6 +150,7 @@
       <workItem from="1692212501172" duration="621000" />
       <workItem from="1692611320466" duration="7971000" />
       <workItem from="1692696472778" duration="19509000" />
+      <workItem from="1692780050547" duration="9337000" />
     </task>
     <servers />
   </component>

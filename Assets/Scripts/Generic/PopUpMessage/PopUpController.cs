@@ -19,8 +19,6 @@ namespace WasderGQ.Sudoku
             return popUpMessage;
         }
         
-        
-        
         [CanBeNull]private static PopUpMessage CatchPrefabPopUpMessage()
         {
             try

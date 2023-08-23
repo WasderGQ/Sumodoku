@@ -14,6 +14,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
         [SerializeField] private TextMeshPro _text;
         [SerializeField] private Tween _currentAnimation;
         [SerializeField] public bool _unSelectable;
+        [SerializeField] public Color _defaultColor;
         [field: SerializeField,DisableValueChange] public int TrueValue { get; private set; }
         [field: SerializeField, DisableValueChange] public int[] ZoneID { get; private set; }
         
@@ -121,6 +122,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
             ParselID = new int[2];
             SetMyValueDefault();
             SetIsHintDefault();
+            _defaultColor = _myImage.color;
             //SetLayer(LayerMask.NameToLayer("Interactable"));
             
         }
@@ -220,7 +222,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
         public void DoToDefaultZoneAnimation()
         {
             _currentAnimation.Kill();
-            _currentAnimation = _myImage.DOColor(Color.white, 1f);
+            _currentAnimation = _myImage.DOColor(_defaultColor, 1f);
         }
         
         public void WriteValue(int givenvalue)

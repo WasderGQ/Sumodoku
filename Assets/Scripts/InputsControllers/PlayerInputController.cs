@@ -133,7 +133,9 @@ namespace WasderGQ.Sudoku.InputsControllers
             }
             else if(raycastHit.collider.CompareTag("RefreshBoard"))
             {
-                SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);
+                PopUpMessage popUpMessage = PopUpController.CreatePopUpMessage();
+                IsInputControllerActive = false;
+                popUpMessage.SetYesNoPopUpMessage("Are you sure you want to recreate the board ?", () => { SceneLoader.Instance.LoadScene(EnumScenes.GameSceneSudoku);},()=> IsInputControllerActive = true);
             }
             else
             {

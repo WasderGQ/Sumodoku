@@ -210,7 +210,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _AlertColor: {r: 0.7265758, g: 3.393879, b: 3.0043807, a: 4}
+    - _AlertColor: {r: 0.8784313, g: 3.4352942, b: 1.2235293, a: 4}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 0.38819203, g: 1.4083751, b: 0.49453962, a: 1.65}
     - _Color_1: {r: 0, g: 0, b: 0, a: 0}

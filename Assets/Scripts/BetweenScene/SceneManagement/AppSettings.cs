@@ -13,7 +13,7 @@ namespace WasderGQ.Sudoku.BetweenScene
             return await OnAwakeSetScreenSettings();
         }
 
-        private async Task<bool >OnAwakeSetScreenSettings()
+        private async Task<bool>OnAwakeSetScreenSettings()
         {
             SetScreenSleepMode(ScreenStatus.NeverSleep);
             SetScreenFrameRate(Screen.currentResolution.refreshRate);
