@@ -625,22 +625,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223169825}
     m_Modifications:
-    - target: {fileID: 9093540596662264, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
-      propertyPath: _myparselID
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 285802170203522718, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
-      propertyPath: _myparselID
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7876087641240328244, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
-      propertyPath: _myparselID
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8841668847408666493, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0006599426
-      objectReference: {fileID: 0}
     - target: {fileID: 2521533119233336978, guid: b6d1f99dc09633240a52abc0547c1116, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -728,6 +712,22 @@ PrefabInstance:
     - target: {fileID: 5201508230503340925, guid: b6d1f99dc09633240a52abc0547c1116, type: 3}
       propertyPath: m_Name
       value: 12_ParselRow_Down
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093540596662264, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
+      propertyPath: _myparselID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 285802170203522718, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
+      propertyPath: _myparselID
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876087641240328244, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
+      propertyPath: _myparselID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841668847408666493, guid: 8d0e0b2c2083fc94d8051e52225e87b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0006599426
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -992,6 +992,7 @@ MonoBehaviour:
   - {fileID: 379025801}
   - {fileID: 521687841}
   _sealedZones: []
+  <_knowedZoneTextColor>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1001 &1253184784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1894,14 +1895,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223169825}
     m_Modifications:
-    - target: {fileID: 9093540596662264, guid: fa84f1b11f2e4d8428062d4c60ed33bd, type: 3}
-      propertyPath: _myparselID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 285802170203522718, guid: fa84f1b11f2e4d8428062d4c60ed33bd, type: 3}
-      propertyPath: _myparselID
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 998296006369387532, guid: ecb2dea708ae49440b6cefbcd2951f04, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1989,6 +1982,14 @@ PrefabInstance:
     - target: {fileID: 7425197477113076195, guid: ecb2dea708ae49440b6cefbcd2951f04, type: 3}
       propertyPath: m_Name
       value: 11_ParselRow_Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093540596662264, guid: fa84f1b11f2e4d8428062d4c60ed33bd, type: 3}
+      propertyPath: _myparselID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 285802170203522718, guid: fa84f1b11f2e4d8428062d4c60ed33bd, type: 3}
+      propertyPath: _myparselID
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

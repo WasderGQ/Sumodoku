@@ -97,7 +97,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
                     zone = TakeRandomZone();
                 } while (IsThereSameValue(zone));
                 zone.WriteValue(zone.TrueValue);
-                zone.ChangeTextColor(new Color(255f/255f,0f/255f,53f/255f,255f/255f));
+                zone.ChangeTextColor(_knowedZoneTextColor);
                 zone.SetInterecable(false);
                 //zone.SetLayer(UnInteractable); In UI not working
                 zone._unSelectable = true;
@@ -110,13 +110,13 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
             switch (gameMode.GameDifficulty)
             {
                 case GameDifficulty.Easy:
-                    return 30;
+                    return 40;
                 case GameDifficulty.Medium:
-                    return 26;
+                    return 34;
                 case GameDifficulty.Hard:
-                    return 22;
+                    return 26;
                 case GameDifficulty.VeryHard:
-                    return 18;
+                    return 20;
                 case GameDifficulty.Extreme:
                     return 14;
                  default:

@@ -31,7 +31,7 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
             GetAdaptiveSize();
             LoadBanner();
             ListenToAdEvents();
-            
+            DestroyOnSceneSwitch();
         }
 
         private void GetAdaptiveSize()

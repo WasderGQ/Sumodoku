@@ -56,6 +56,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
                         return;
                 }
             }
+            
             SceneLoader.Instance.WLoadScene(EnumScenes.Celebration);
         }
     }

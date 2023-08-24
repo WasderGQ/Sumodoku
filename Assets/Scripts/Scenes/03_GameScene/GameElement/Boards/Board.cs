@@ -14,8 +14,9 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
         protected Zone[,] _zones;
         [SerializeField] protected Parsel[] _parsels;
         [SerializeField] protected List<Zone> _sealedZones;
-         protected SO_GameMode _gameMode;
-         protected virtual int _amountOfSealedZones { get; set; }
+        protected SO_GameMode _gameMode;
+
+        [field: SerializeField] protected Color _knowedZoneTextColor { get; set; }
         //[SerializeField] protected LayerMask UnInteractable;
         public Parsel[] Parsels { get => _parsels; }
         public Zone[,] Zones { get => _zones; }
@@ -91,8 +92,8 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
 
         protected Zone TakeRandomZone()
         {
-            int xValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(0) - 1)));
-            int yValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(1) - 1)));
+            int xValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(0) )));
+            int yValueIndex = Convert.ToInt32(Mathf.Floor(Random.Range(0 , _zones.GetLength(1) )));
             return _zones[xValueIndex, yValueIndex];
         }
         
