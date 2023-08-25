@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd2f4adb-5eda-40a8-ac4f-90398db23f66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/03_GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/04_CelebrationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/04_CelebrationScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ThirdPartyUtility/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="cd2f4adb-5eda-40a8-ac4f-90398db23f66" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +112,7 @@
       <workItem from="1692611320466" duration="7971000" />
       <workItem from="1692696472778" duration="19509000" />
       <workItem from="1692780050547" duration="18222000" />
-      <workItem from="1692861708481" duration="1932000" />
+      <workItem from="1692861708481" duration="2699000" />
     </task>
     <servers />
   </component>
