@@ -17,14 +17,9 @@ namespace WasderGQ.Sudoku.Scenes.GameScene
         [SerializeField] private int _currentlySelectedBoard;
         [SerializeField] private Keyboard _keyboard;
         
-        private void Start()
+        private async void Start()
         {
-            BannerController.Instance.Init();
-            InIt();
-        }
-        
-        private void InIt()
-        {
+            await BannerController.Instance.Init();
             GameBoardOpener();
             BoardInIt();
             KeyboardInIt();

@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 448021757}
   - component: {fileID: 448021758}
   m_Layer: 0
-  m_Name: LoadingScene
+  m_Name: 00_LoadingScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,7 +670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &448021758
 MonoBehaviour:
@@ -921,7 +921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 602733575}
   m_Layer: 0
-  m_Name: LoadSceneObjects
+  m_Name: 01_LoadSceneObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -941,7 +941,7 @@ Transform:
   m_Children:
   - {fileID: 182163671}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090337019
 GameObject:
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 1423321852}
   - component: {fileID: 1423321851}
   m_Layer: 0
-  m_Name: LoadedScriptsAndObjects
+  m_Name: 02_LoadedScriptsAndObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
