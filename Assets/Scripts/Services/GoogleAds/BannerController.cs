@@ -1,8 +1,7 @@
 using System;
-using System.Collections;
-using UnityEngine;
-using GoogleMobileAds;
+using System.Threading.Tasks;
 using GoogleMobileAds.Api;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using WasderGQ.Utility.Singleton;
 
@@ -14,10 +13,10 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         private BannerView _bannerView;
         private AdSize adaptiveSize;
         private GameObject _adaptiveBanner;
-        
+        private bool _isDestroyEventActive;
     #if UNITY_EDITOR
         private string _adUnitId = "ca-app-pub-3940256099942544/6300978111";
-    #elif UNITY_ANDROID
+    #elif UNITY_ANDROID && !UNITY_EDITOR
         private string _adUnitId = "ca-app-pub-3306653392214615/8650743807";  // real used : ca-app-pub-3306653392214615/8650743807
     #elif UNITY_IPHONE
         private string _adUnitId = "ca-app-pub-3940256099942544/2934735716"; // not active
@@ -26,31 +25,38 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
     #endif
         // android Test : _adUnitId = "ca-app-pub-3940256099942544/6300978111"
         
-        public void  Init()
+        public async Task Init()
         {
             GetAdaptiveSize();
-            LoadBanner();
+            await LoadBanner();
             ListenToAdEvents();
             DestroyOnSceneSwitch();
         }
-
+    
+        public async Task CheckBanner()
+        {
+            if (_bannerView.IsDestroyed)
+            {
+                GetAdaptiveSize();
+                await LoadBanner();
+                ListenToAdEvents();
+            }
+                
+        }
         private void GetAdaptiveSize()
         {
             adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
         }
-        private void LoadBanner()
-        {
-                StartCoroutine(LoadAd());
-        }
         
-        private IEnumerator LoadAd()
+        
+        private async Task LoadBanner()
         {
             while(SceneManager.sceneCount > 1)
             {
-                yield return null;
+                await Task.Delay(1000);
             }
             CreateBannerView();
-            AdRequest adRequest = new AdRequest.Builder().Build();
+            AdRequest adRequest = new AdRequest();
             adRequest.Keywords.Add("unity-admob-sample");
             Debug.Log("Loading banner ad.");
             _bannerView.LoadAd(adRequest);
@@ -67,10 +73,15 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
         }
         private void DestroyOnSceneSwitch()
         {
-            SceneManager.activeSceneChanged += (current, next) =>
+            if (_isDestroyEventActive)
             {
-                DestroyAd();
-            };
+                SceneManager.activeSceneChanged += (current, next) =>
+                {
+                    DestroyAd();
+                }; 
+                _isDestroyEventActive = true;
+            }
+            
         }
         private void ListenToAdEvents()
         {
@@ -115,5 +126,6 @@ namespace WasderGQ.Sudoku.Services.GoogleAds
             };
         }
     }
+
     
 }

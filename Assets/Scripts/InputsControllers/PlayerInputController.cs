@@ -84,7 +84,7 @@ namespace WasderGQ.Sudoku.InputsControllers
                 try
                 {
                     Zone zone = raycastHit.collider.GetComponentInParent<Zone>();
-                    if (!zone._unSelectable)
+                    if (zone._isSelectable)
                     {
                         if (zone.Selected)
                         {

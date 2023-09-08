@@ -35,11 +35,11 @@ namespace WasderGQ.Sudoku
             _fadeValue = CalculateFadeValue();
             StartCoroutine(StartTextColorAnimationForNumber());
             StartCoroutine(MoveToEnd());
-            _moveTime = 20;
+            _moveTime = 12;
         }
         private void CalculateStartAndEndPosition(Vector2 screenSize)
         {
-            numbersStartPoint = new Vector2(0, 1f);
+            numbersStartPoint = new Vector2(0, 1.25f);
             numbersEndPoint = new Vector2((screenSize.x - numbersStartPoint.x)  , (screenSize.y + numbersStartPoint.y) * -1f);
         }
         
@@ -103,7 +103,7 @@ namespace WasderGQ.Sudoku
             float speed = 0;
             while (!StopAnimation)
             {
-                transform.DOLocalMoveY(numbersEndPoint.y,_moveTime);
+                transform.DOLocalMoveY(numbersEndPoint.y,_moveTime).SetEase(Ease.InSine);
                 yield return new WaitForSeconds(_moveTime);
                 SetStartPosition(SelectRandomPosition());
                 SetRandomNumber();

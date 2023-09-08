@@ -14,7 +14,6 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
         protected Zone[,] _zones;
         [SerializeField] protected Parsel[] _parsels;
         [SerializeField] protected List<Zone> _sealedZones;
-        protected SO_GameMode _gameMode;
 
         [field: SerializeField] protected Color _knowedZoneTextColor { get; set; }
         //[SerializeField] protected LayerMask UnInteractable;
@@ -70,21 +69,19 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
 
         protected virtual void SelectZoneFromBoard(int amount)
         {
-            int startValue = 0;
-            int counter = startValue;
+            int counter = 0;
             while (counter < amount)
             {
-                Zone zone = TakeRandomZone();
-                if (IsThereSameValue(zone))
+                Zone zone;
+                do
                 {
-                    SelectZoneFromBoard( amount);
-                    break;
-                }
+                    zone = TakeRandomZone();
+                } while (IsThereSameValue(zone));
                 zone.WriteValue(zone.TrueValue);
-                zone.ChangeTextColor(new Color(255f/255f,0f/255f,53f/255f,255f/255f));
+                zone.ChangeTextColor(_knowedZoneTextColor);
                 zone.SetInterecable(false);
+                zone._isSelectable = false;  //**no necessary because of that zone in the beginning is not selectable**
                 //zone.SetLayer(UnInteractable); In UI not working
-                zone._unSelectable = true;
                 _sealedZones.Add(zone);
                 counter++;
             }
@@ -120,7 +117,20 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
                 }
             }
         }
-
+        protected virtual void SetAllZoneInteractable()
+        {
+            foreach (var parsel in _parsels)
+            {
+                foreach (var zone in parsel.ZonesInParsel)
+                {
+                    if (!_sealedZones.Contains(zone))
+                    {
+                        Debug.Log(zone.ZoneID + " : " + _sealedZones.Contains(zone));
+                        zone._isSelectable = true;
+                    }
+                }
+            }
+        }
         
         protected  virtual int CalculateAmountOfSealedZones(SO_GameMode gameMode)
         {

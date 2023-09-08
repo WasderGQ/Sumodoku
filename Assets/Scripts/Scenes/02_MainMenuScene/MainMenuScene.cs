@@ -23,11 +23,11 @@ namespace WasderGQ.Sudoku.Scenes.MainMenuScene
             InIt();
         }
         
-        void InIt()
+        async void InIt()
         {
             EventListener();
             InItVariable();
-            BannerController.Instance.Init();
+            await BannerController.Instance.Init();
         }
        
         void InItVariable()
