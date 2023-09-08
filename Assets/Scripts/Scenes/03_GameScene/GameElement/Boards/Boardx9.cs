@@ -11,17 +11,17 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
 
         public override void InIt(SO_GameMode gameMode)
         {
-             
-            ConvertParselZonesToZones();//
-            base.ParselsInIt(); //parsels in it
-            base.SetZonesID();  //set zones id
+            ConvertParselZonesToZones();//parsel list convert to 2d array (by zone)
+            base.ParselsInIt();//parsels in it
+            base.SetZonesID(); //set zones id
             base.StartMapCreater(); //start map creater
             base.MakeZonesDefault(); //start with null value zone
             int amountOfSealedZones = CalculateAmountOfSealedZones(gameMode); //calculate amount of sealed zones
-            SelectZoneFromBoard(amountOfSealedZones); // show selected zone's value
+            base.SelectZoneFromBoard(amountOfSealedZones); // show selected zone's value
+            base.SetAllZoneInteractable(); //set all zone interactable
         }
 
-
+        
         protected override void ConvertParselZonesToZones()
         {
             try
@@ -86,25 +86,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement.Boards
             }
         }
 
-        protected override void SelectZoneFromBoard(int amount)
-        {
-            int counter = 0;
-            while (counter < amount)
-            {
-                Zone zone;
-                do
-                {
-                    zone = TakeRandomZone();
-                } while (IsThereSameValue(zone));
-                zone.WriteValue(zone.TrueValue);
-                zone.ChangeTextColor(_knowedZoneTextColor);
-                zone.SetInterecable(false);
-                //zone.SetLayer(UnInteractable); In UI not working
-                zone._unSelectable = true;
-                _sealedZones.Add(zone);
-                counter++;
-            }
-        }
+        
         protected override int CalculateAmountOfSealedZones(SO_GameMode gameMode)
         {
             switch (gameMode.GameDifficulty)

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using WasderGQ.Utility.UnityEditor;
 
 
@@ -13,7 +14,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
         [SerializeField] private SpriteRenderer _myImage;
         [SerializeField] private TextMeshPro _text;
         [SerializeField] private Tween _currentAnimation;
-        [SerializeField] public bool _unSelectable;
+        [SerializeField] public bool _isSelectable;
         [SerializeField] public Color _defaultColor;
         [field: SerializeField,DisableValueChange] public int TrueValue { get; private set; }
         [field: SerializeField, DisableValueChange] public int[] ZoneID { get; private set; }
@@ -32,12 +33,12 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
             get => PossibleValueList.Count;
         }
 
-        private bool isInteractable;
+        private bool _isInteractable;
         
         public bool IsInteractable
         {
-            get { return isInteractable; }
-            private set { isInteractable = value; }
+            get { return _isInteractable; }
+            private set { _isInteractable = value; }
         }
 
         private int _setMyValue //when value change trigger RefreshText func. #Property
@@ -92,7 +93,7 @@ namespace WasderGQ.Sudoku.Scenes.GameScene.GameElement
 
         public void SetInterecable(bool value)
         {
-            IsInteractable = value;
+            _isInteractable = value;
         }
         public void ChangeHintSetting(bool onOff)
         {

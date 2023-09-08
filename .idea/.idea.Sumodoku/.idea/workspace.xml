@@ -5,149 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd2f4adb-5eda-40a8-ac4f-90398db23f66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sumodoku/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.IOSResolver.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.IOSResolver.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.JarResolver.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.JarResolver.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.PackageManagerResolver.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.PackageManagerResolver.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.VersionHandlerImpl.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.176/Google.VersionHandlerImpl.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.176_manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.176_manifest.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/CHANGELOG.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/BuildPreProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/BuildPreProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/BuildPreProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/BuildPreProcessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAds.Editor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAds.Editor.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettingsEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettingsEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/1024x768.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/1024x768.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/300x250.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/300x250.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x100.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x480.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x480.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x50.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/320x50.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/468x60.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/468x60.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/480x320.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/480x320.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/728x90.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/728x90.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/768x1024.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/768x1024.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/AdInspectorHome.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdImages/AdInspectorHome.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdInspector/768x1024.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AdInspector/768x1024.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/1024x768.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/1024x768.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/768x1024.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/AppOpen/768x1024.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/ADAPTIVE.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/BANNER.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/BANNER.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/CENTER.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/CENTER.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/FULL_BANNER.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/FULL_BANNER.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LARGE_BANNER.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LARGE_BANNER.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LEADERBOARD.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/LEADERBOARD.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/MEDIUM_RECTANGLE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/MEDIUM_RECTANGLE.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/SMART_BANNER.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Banners/SMART_BANNER.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/1024x768.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/1024x768.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/768x1024.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Interstitials/768x1024.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/1024x768.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/1024x768.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/768x1024.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/PlaceholderAds/Rewarded/768x1024.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/Resources/Ump/ConsentForm.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Android.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Android.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Android.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Android.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Android.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Android.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Android.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Android.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.iOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.iOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.iOS.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Ump.iOS.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds_version-8.4.1_manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds_version-8.4.1_manifest.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/LICENSE.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/LICENSE.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/link.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleMobileAds/link.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Alert Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sumo Icon.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/project.properties.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.2.0.jar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.concurrent.concurrent-futures-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.concurrent.concurrent-futures-1.0.0.jar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-22.2.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-22.2.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-22.2.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-22.2.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.2.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-22.2.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-base-18.0.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-base-18.0.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-18.0.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-18.0.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-20.1.2.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-20.1.2.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-20.1.2.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-20.1.2.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.1.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.1.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.ump.user-messaging-platform-2.0.0.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.ump.user-messaging-platform-2.0.0.aar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/unity-plugin-library.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_LoadingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/01_LoadingScene/LoadingBarController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/Animations/Elements/Number.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/02_MainMenuScene/MainMenuScene.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/Sudoku.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/BannerController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/GoogleAdsService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GoogleAds/GoogleAdsService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Services.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Services/google-services.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Services/google-services.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputsControllers/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputsControllers/PlayerInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Board.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Boards/Boardx9.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Zone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/03_GameScene/GameElement/Zone.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +121,8 @@
       <workItem from="1692780050547" duration="18222000" />
       <workItem from="1692861708481" duration="2699000" />
       <workItem from="1692952304904" duration="1008000" />
-      <workItem from="1694162747162" duration="5025000" />
+      <workItem from="1694162747162" duration="7600000" />
+      <workItem from="1694174263066" duration="672000" />
     </task>
     <servers />
   </component>
